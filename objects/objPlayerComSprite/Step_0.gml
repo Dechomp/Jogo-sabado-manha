@@ -17,4 +17,19 @@
 	
 	y += moviY * velocidade
 	x += moviX * velocidade
+	
+	if moviX < 0 and image_xscale > 0{
+		image_xscale *= -1
+	}
+	else if moviX > 0 and image_xscale < 0{
+		image_xscale *= -1
+	}
+#endregion
+
+#region Transição de fase
+	
+	if pontos == 3{
+		room_goto_next()
+	}
+
 #endregion
