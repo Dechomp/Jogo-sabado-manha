@@ -14,9 +14,9 @@
 	moviY = (teclaBaixo or setaBaixo ) - (teclaCima or setaCima) 
 	moviX = (teclaDir or setaDir) - (teclaEsq or setaEsq)
 	
-	
-	y += moviY * velocidade
 	x += moviX * velocidade
+	y += moviY * velocidade
+	
 	
 	if moviX < 0 and image_xscale > 0{
 		image_xscale *= -1
@@ -24,12 +24,25 @@
 	else if moviX > 0 and image_xscale < 0{
 		image_xscale *= -1
 	}
+	
+	if x + moviX * velocidade <= 0 or x + moviX * velocidade >= room_width{
+		x -= moviX * velocidade
+	}
+	
+	if y + moviY * velocidade <= 0 or y + moviY * velocidade >= room_height{
+		y -= moviY * velocidade
+	}
+	
 #endregion
 
 #region Transição de fase
 	
 	if pontos == 3{
-		room_goto_next()
+		if room != room_last {
+			room_goto_next()
+		}
+		else{
+			room = room_first
+		}
 	}
-
 #endregion

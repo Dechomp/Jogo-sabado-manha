@@ -45,6 +45,8 @@
     {"id":{"name":"rmFase2","path":"rooms/rmFase2/rmFase2.yy",},},
     {"id":{"name":"sprColetavel","path":"sprites/sprColetavel/sprColetavel.yy",},},
     {"id":{"name":"sprFundo","path":"sprites/sprFundo/sprFundo.yy",},},
+    {"id":{"name":"sprFundo2","path":"sprites/sprFundo2/sprFundo2.yy",},},
+    {"id":{"name":"sprFundo3","path":"sprites/sprFundo3/sprFundo3.yy",},},
     {"id":{"name":"sprMouse","path":"sprites/sprMouse/sprMouse.yy",},},
     {"id":{"name":"sprPlayer","path":"sprites/sprPlayer/sprPlayer.yy",},},
     {"id":{"name":"sprPolvo","path":"sprites/sprPolvo/sprPolvo.yy",},},
